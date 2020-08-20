@@ -13,5 +13,7 @@ sudo ufw allow 80/tcp
 
 sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
-sudo apt-get install iptables-persistent (no me deja abierto el puerto)
+sudo apt-get install iptables-persistent 
+
+nmap -PNO -sV 177.247.113.5 -p 80 (no me deja abierto el puerto)
 
